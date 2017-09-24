@@ -51,28 +51,20 @@ class Home extends Component {
 }
 
 const MainNavigator  = TabNavigator({
-  // Welcome: { screen: WelcomeScreen , navigationOptions: {tabBarVisible: false}},
   Welcome: { screen: Home },
   NearBy: { screen: Location2 },
   Main: {
     screen: StackNavigator({
-      // NearBy: { screen: Location2 },
       Map : {screen: RnDirectionsApp },
       Login : { screen: LoginScreen },
       SignUp : { screen: SignupScreen }
-      
-      // View: {
-      //   screen: StackNavigator({
-      //     Auth: { screen: AuthScreen },
-      //   })
-      // }
     })
   }
 });
 
 const styles = StyleSheet.create({
   container: {
-   //  flex: 1
+    flex: 1
     },
   favourite: {
     textAlign: 'center',

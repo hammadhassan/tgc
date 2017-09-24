@@ -1,6 +1,6 @@
 # TouristGuide
 
-git clone https://github.com/hammadhassan/TouristGuide
+git clone https://github.com/hammadhassan/tgc
 
 npm install
 
